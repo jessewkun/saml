@@ -3,7 +3,6 @@ module github.com/jessewkun/saml/samlidp
 go 1.16
 
 require (
-	github.com/jessewkun/saml v0.4.8
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/mattermost/xml-roundtrip-validator v0.1.0
