@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"net/http"
 
-	"github.com/crewjam/saml"
+	"github.com/jessewkun/saml"
 )
 
 // Middleware implements middleware than allows a web application
@@ -209,9 +209,8 @@ func (m *Middleware) CreateSessionFromAssertion(w http.ResponseWriter, r *http.R
 //
 // For example:
 //
-//     goji.Use(m.RequireAccount)
-//     goji.Use(RequireAttributeMiddleware("eduPersonAffiliation", "Staff"))
-//
+//	goji.Use(m.RequireAccount)
+//	goji.Use(RequireAttributeMiddleware("eduPersonAffiliation", "Staff"))
 func RequireAttribute(name, value string) func(http.Handler) http.Handler {
 	return func(handler http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

@@ -19,7 +19,7 @@ import (
 	"github.com/zenazn/goji"
 	"github.com/zenazn/goji/web"
 
-	"github.com/crewjam/saml/samlsp"
+	"github.com/jessewkun/saml/samlsp"
 )
 
 var links = map[string]Link{}

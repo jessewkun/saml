@@ -1,8 +1,8 @@
 # SAML
 
-[![](https://godoc.org/github.com/crewjam/saml?status.svg)](http://godoc.org/github.com/crewjam/saml)
+[![](https://godoc.org/github.com/jessewkun/saml?status.svg)](http://godoc.org/github.com/jessewkun/saml)
 
-![Build Status](https://github.com/crewjam/saml/workflows/Presubmit/badge.svg)
+![Build Status](https://github.com/jessewkun/saml/workflows/Presubmit/badge.svg)
 
 Package saml contains a partial implementation of the SAML standard in golang.
 SAML is a standard for identity federation, i.e. either allowing a third party to authenticate your users or allowing third parties to rely on us to authenticate their users.
@@ -54,7 +54,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/crewjam/saml/samlsp"
+	"github.com/jessewkun/saml/samlsp"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
@@ -142,16 +142,16 @@ Unfortunately, _RelayState_ is less useful than it could be. Firstly, it is **no
 
 The SAML specification is a collection of PDFs (sadly):
 
-- [SAMLCore](http://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf) defines data types.
+-   [SAMLCore](http://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf) defines data types.
 
-- [SAMLBindings](http://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf) defines the details of the HTTP requests in play.
+-   [SAMLBindings](http://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf) defines the details of the HTTP requests in play.
 
-- [SAMLProfiles](http://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf) describes data flows.
+-   [SAMLProfiles](http://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf) describes data flows.
 
-- [SAMLConformance](http://docs.oasis-open.org/security/saml/v2.0/saml-conformance-2.0-os.pdf) includes a support matrix for various parts of the protocol.
+-   [SAMLConformance](http://docs.oasis-open.org/security/saml/v2.0/saml-conformance-2.0-os.pdf) includes a support matrix for various parts of the protocol.
 
 [SAMLtest](https://samltest.id/) is a testing ground for SAML service and identity providers.
 
 ## Security Issues
 
-Please do not report security issues in the issue tracker. Rather, please contact me directly at ross@kndr.org ([PGP Key `78B6038B3B9DFB88`](https://keybase.io/crewjam)). If your issue is *not* a security issue, please use the issue tracker so other contributors can help.
+Please do not report security issues in the issue tracker. Rather, please contact me directly at ross@kndr.org ([PGP Key `78B6038B3B9DFB88`](https://keybase.io/jessewkun)). If your issue is _not_ a security issue, please use the issue tracker so other contributors can help.
